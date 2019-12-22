@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#92fbf9e3</color>
+    <color name="BGC1">#b6fdf9c3</color>
+    <color name="BGC2">#eefdfe</color>
+    <color name="BGC3">#36007aff</color>
+    <color name="BGC4">#612e7866</color>
+
+    <color name="black_overlay">#00fefdfd</color>
+    <color name="RUA">#d3f9bc05</color>
+    <color name="RUA2">#f9b405</color>
+</resources>

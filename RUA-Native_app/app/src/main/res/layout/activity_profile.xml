@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xuwei.myapplication.profile">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="50000dp"
+        android:layout_height="50000dp"
+        app:srcCompat="@color/BGC2"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profile1">
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/BGC1"
+                android:onClick="home"
+                app:srcCompat="@drawable/icons8_home_26" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/BGC1"
+                android:onClick="calendar"
+                app:srcCompat="@drawable/icons8_calendar_26" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/BGC1"
+                android:onClick="gift"
+                app:srcCompat="@drawable/icons8_christmas_gift_26" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                style="@android:style/Widget.ImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/RUA"
+                app:srcCompat="@drawable/icons8_user_male_26" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/profile1"
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/BGC4"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imageButton17"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black_overlay"
+                        android:scaleType="fitStart"
+                        app:srcCompat="@drawable/me" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/black_overlay"
+                        android:scaleType="fitEnd"
+                        app:srcCompat="@drawable/edit" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/imageButton19"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/BGC1"
+                    android:backgroundTint="@color/BGC1"
+                    android:onClick="friends"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/friends" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imageButton20"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/black_overlay"
+                            android:scaleType="fitStart"
+                            app:srcCompat="@drawable/xw" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/button6"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_toEndOf="@+id/button10"
+                            android:layout_toRightOf="@+id/button10"
+                            android:layout_weight="1"
+                            android:text="Name： Xuwei"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView19"
+                        android:layout_alignStart="@+id/textView19"
+                        android:layout_below="@+id/textView19"
+                        android:layout_marginTop="21dp"
+                        android:text="Date of birth: 14/9/2000"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView20"
+                        android:layout_alignStart="@+id/textView20"
+                        android:layout_below="@+id/textView20"
+                        android:layout_marginTop="19dp"
+                        android:text="Phone: 4008823823"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView21"
+                        android:layout_alignStart="@+id/textView21"
+                        android:layout_below="@+id/textView21"
+                        android:layout_marginTop="20dp"
+                        android:text="Email: xuweig@kth.se"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/BGC1"
+                        android:backgroundTint="@color/BGC1"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/imageView14"
+                            android:layout_alignStart="@+id/imageView14"
+                            android:layout_alignTop="@+id/imageView14"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginStart="17dp"
+                            android:layout_marginTop="13dp"
+                            android:text="Gift Wish:"
+                            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/textView23"
+                            android:layout_alignBottom="@+id/textView23"
+                            android:layout_toLeftOf="@+id/button12"
+                            android:layout_toStartOf="@+id/button12"
+                            android:text="Scarf"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView24"
+                            android:layout_alignStart="@+id/textView24"
+                            android:layout_below="@+id/textView24"
+                            android:layout_marginTop="19dp"
+                            android:text="Necklace"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView25"
+                            android:layout_alignStart="@+id/textView25"
+                            android:layout_below="@+id/textView25"
+                            android:layout_marginTop="25dp"
+                            android:text="Sparkle"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

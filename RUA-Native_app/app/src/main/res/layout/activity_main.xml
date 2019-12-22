@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xuwei.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="10dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_toLeftOf="@+id/imageView16"
+        android:layout_toStartOf="@+id/imageView16"
+        app:srcCompat="@color/BGC4"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="146dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="50000dp"
+        android:layout_height="50000dp"
+        app:srcCompat="@color/BGC2"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="325dp"
+            android:layout_height="142dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@color/BGC1"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="295dp"
+            android:layout_height="227dp"
+            android:layout_alignEnd="@+id/imageView10"
+            android:layout_alignRight="@+id/imageView10"
+            android:layout_centerVertical="true"
+            app:srcCompat="@color/BGC1"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView16"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView16"
+            android:layout_marginTop="24dp"
+            android:text="Hej!"
+            android:textAppearance="@android:style/TextAppearance.Material.Display3"
+            app:layout_constraintEnd_toEndOf="@+id/layout1"
+            tools:layout_editor_absoluteY="49dp" />
+
+        <EditText
+            android:id="@+id/inputpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/loginbutton"
+            android:layout_alignLeft="@+id/loginbutton"
+            android:layout_alignStart="@+id/loginbutton"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="123456"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/inputusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/inputpassword"
+            android:layout_alignStart="@+id/inputpassword"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Xuwei@gmail.com"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/loginbutton"
+            style="@android:style/Widget.DeviceDefault.Light.Button.Toggle"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:backgroundTint="@color/BGC4"
+            android:onClick="home"
+            android:text="Login" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="325dp"
+            android:layout_height="135dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@color/BGC1"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/inputusername"
+            android:layout_toLeftOf="@+id/inputusername"
+            android:layout_toStartOf="@+id/inputusername"
+            app:srcCompat="@drawable/xw" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/inputpassword"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/pass"
+            tools:layout_editor_absoluteX="73dp"
+            tools:layout_editor_absoluteY="265dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

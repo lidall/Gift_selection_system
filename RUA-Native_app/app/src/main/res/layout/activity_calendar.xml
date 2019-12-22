@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xuwei.myapplication.Calendar">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="5000dp"
+        android:layout_height="5000dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@color/BGC2"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="328dp"
+        android:layout_height="479dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/nextup0"
+            android:layout_weight="1"
+            android:orientation="vertical">>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/BGC1"
+                    android:onClick="home"
+                    app:srcCompat="@drawable/icons8_home_26" />
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/RUA"
+                    app:srcCompat="@drawable/icons8_calendar_26" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/BGC1"
+                    android:onClick="gift"
+                    app:srcCompat="@drawable/icons8_christmas_gift_26" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    style="@android:style/Widget.ImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/BGC1"
+                    android:onClick="profile"
+                    app:srcCompat="@drawable/icons8_user_male_26" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="329dp"
+            android:layout_height="359dp"
+            android:layout_above="@+id/HOME"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@color/RUA2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker2"
+            android:layout_width="329dp"
+            android:layout_height="359dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/black_overlay"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nextup0"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            app:backgroundTint="@color/BGC2"
+            app:srcCompat="@drawable/plus" />
+
+        <LinearLayout
+            android:id="@+id/nextup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/datePicker2"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView3"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:layout_toStartOf="@+id/textView3"
+                    android:layout_weight="1"
+                    android:text="Next Up:"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    tools:layout_editor_absoluteX="43dp"
+                    tools:layout_editor_absoluteY="322dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/nextup0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/nextup">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/textView4"
+                        android:layout_toEndOf="@+id/HOME"
+                        android:layout_toRightOf="@+id/HOME"
+                        android:layout_weight="1"
+                        android:text="Dinner with YUAN!!"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="15dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/BGC2"
+                        android:scaleType="matrix"
+                        app:srcCompat="@drawable/dinner" />
+
+                    <TextClock
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="14:00 Jan.4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/CALENDAR"
+                        android:layout_alignLeft="@+id/textView3"
+                        android:layout_alignStart="@+id/textView3"
+                        android:layout_marginBottom="12dp"
+                        android:layout_weight="1"
+                        android:text="Hongyi's birthday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        tools:layout_editor_absoluteX="93dp"
+                        tools:layout_editor_absoluteY="101dp" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="15dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/BGC2"
+                        android:scaleType="matrix"
+                        app:srcCompat="@drawable/birthday" />
+
+                    <TextClock
+                        android:id="@+id/textClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="17:00 Jan 6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="send Lida email"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="15dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/BGC2"
+                        android:scaleType="matrix"
+                        app:srcCompat="@drawable/email" />
+
+                    <TextClock
+                        android:id="@+id/textClock2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:text="12:00  Jan.9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="pick up my son"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
